@@ -1,0 +1,10 @@
+{
+  "display":{
+    "icon":{"id":"everpulse:verdant_sigil"},
+    "title":{"translate":"advancement.everpulse.root.title"},
+    "description":{"translate":"advancement.everpulse.root.description"},
+    "background":"minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "frame":"task","show_toast":true,"announce_to_chat":true,"hidden":false
+  },
+  "criteria":{"sigil":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"items":["everpulse:verdant_sigil","everpulse:ember_sigil","everpulse:zephyr_sigil","everpulse:umbral_sigil"]}]}}}
+}

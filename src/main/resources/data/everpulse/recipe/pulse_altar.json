@@ -1,0 +1,11 @@
+{
+  "type":"minecraft:crafting_shaped","category":"building",
+  "pattern":["VEZ","OCO","SUS"],
+  "key":{
+    "V":{"item":"everpulse:verdant_sigil"},"E":{"item":"everpulse:ember_sigil"},
+    "Z":{"item":"everpulse:zephyr_sigil"},"U":{"item":"everpulse:umbral_sigil"},
+    "O":{"item":"minecraft:crying_obsidian"},"C":{"item":"everpulse:champion_core"},
+    "S":{"item":"minecraft:deepslate_tiles"}
+  },
+  "result":{"id":"everpulse:pulse_altar","count":1}
+}

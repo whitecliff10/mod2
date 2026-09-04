@@ -1,0 +1,7 @@
+{
+  "replace":false,
+  "values":[
+    "everpulse:pulse_altar","everpulse:verdant_stone","everpulse:ember_stone",
+    "everpulse:zephyr_stone","everpulse:umbral_stone"
+  ]
+}

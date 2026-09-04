@@ -1,0 +1,6 @@
+{
+  "parent":"everpulse:champion",
+  "display":{"icon":{"id":"everpulse:worldheart"},"title":{"translate":"advancement.everpulse.worldheart.title"},"description":{"translate":"advancement.everpulse.worldheart.description"},"frame":"challenge","show_toast":true,"announce_to_chat":true,"hidden":false},
+  "criteria":{"item":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"items":"everpulse:worldheart"}]}}},
+  "rewards":{"experience":250}
+}

@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="everpulse"
+version="1.0.0"
+displayName="Everpulse"
+authors="Everpulse Team"
+logoFile="icon.png"
+description='''
+The world has a heartbeat. Survive four supernatural world pulses, hunt pulse-touched champions, collect sigils, and master a new global progression loop.
+'''
+
+[[dependencies.everpulse]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.249,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.everpulse]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"

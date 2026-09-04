@@ -1,0 +1,6 @@
+{
+  "parent":"everpulse:root",
+  "display":{"icon":{"id":"everpulse:champion_core"},"title":{"translate":"advancement.everpulse.champion.title"},"description":{"translate":"advancement.everpulse.champion.description"},"frame":"challenge","show_toast":true,"announce_to_chat":true,"hidden":false},
+  "criteria":{"item":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"items":"everpulse:champion_core"}]}}},
+  "rewards":{"experience":100}
+}

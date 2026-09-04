@@ -1,0 +1,5 @@
+{
+  "type":"minecraft:crafting_shaped","category":"building","pattern":["SSS","SXS","SSS"],
+  "key":{"S":{"item":"minecraft:stone_bricks"},"X":{"item":"everpulse:ember_sigil"}},
+  "result":{"id":"everpulse:ember_stone","count":8}
+}

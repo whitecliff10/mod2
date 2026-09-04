@@ -1,0 +1,61 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.146'
+    id 'idea'
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = project.neo_version
+
+    parchment {
+        mappingsVersion = project.parchment_mappings_version
+        minecraftVersion = project.parchment_minecraft_version
+    }
+
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.INFO
+        }
+    }
+
+    mods {
+        "${mod_id}" { sourceSet(sourceSets.main) }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.named('jar', Jar).configure {
+    manifest {
+        attributes([
+                'Specification-Title': mod_name,
+                'Specification-Version': '1',
+                'Implementation-Title': project.name,
+                'Implementation-Version': project.jar.archiveVersion,
+                'Implementation-Vendor': 'Everpulse Team'
+        ])
+    }
+    doLast {
+        def contents = zipTree(archiveFile.get().asFile)
+        if (contents.matching { include 'META-INF/neoforge.mods.toml' }.isEmpty()) {
+            throw new GradleException('Invalid mod jar: neoforge.mods.toml is missing')
+        }
+        if (contents.matching { include 'dev/everpulse/Everpulse.class' }.isEmpty()) {
+            throw new GradleException('Invalid mod jar: compiled Everpulse class is missing')
+        }
+    }
+}

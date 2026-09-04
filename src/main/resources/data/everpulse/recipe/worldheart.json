@@ -1,0 +1,10 @@
+{
+  "type":"minecraft:crafting_shaped","category":"equipment",
+  "pattern":["VDE","DCD","ZDU"],
+  "key":{
+    "V":{"item":"everpulse:verdant_sigil"},"E":{"item":"everpulse:ember_sigil"},
+    "Z":{"item":"everpulse:zephyr_sigil"},"U":{"item":"everpulse:umbral_sigil"},
+    "D":{"item":"minecraft:diamond"},"C":{"item":"everpulse:champion_core"}
+  },
+  "result":{"id":"everpulse:worldheart","count":1}
+}

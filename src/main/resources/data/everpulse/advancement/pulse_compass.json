@@ -1,0 +1,5 @@
+{
+  "parent":"everpulse:root",
+  "display":{"icon":{"id":"everpulse:pulse_compass"},"title":{"translate":"advancement.everpulse.compass.title"},"description":{"translate":"advancement.everpulse.compass.description"},"frame":"task","show_toast":true,"announce_to_chat":true,"hidden":false},
+  "criteria":{"item":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"items":"everpulse:pulse_compass"}]}}}
+}
