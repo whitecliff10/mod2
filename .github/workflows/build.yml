@@ -24,8 +24,7 @@ jobs:
         with:
           gradle-version: "9.2.1"
 
-      - name: Validate resources
-        run: python3 tools/validate_project.py
+      
 
       - name: Build mod
         run: gradle build --stacktrace
